@@ -228,9 +228,15 @@ blockquote {
     font-style: italic;
 }
 
+cite {
+    position: relative;
+    left: 10px;
+}
+
 cite img {
     position: relative;
-    top: 10px;
+    top: 12px;
+    right: 10px;
 }
 
 footer {
