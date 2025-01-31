@@ -1,184 +1,184 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Header Section */
 .header {
-    padding-top: 250px;
-    padding-bottom: 40px;
-    padding-left: 30%;
-    width: 55%;
-    background: white;
+  padding-top: 250px;
+  padding-bottom: 40px;
+  padding-left: 30%;
+  width: 55%;
+  background: white;
 }
 
 h1 {
-    font-size: 28px;
-    font-weight: bold;
-    padding-bottom: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 50px;
 }
 
 p {
-    font-size: 17px;
-    padding-bottom: 15px;
+  font-size: 17px;
+  padding-bottom: 15px;
 }
 
 span {
-    color: #3a885c;
-    font-weight: bold;
+  color: #3a885c;
+  font-weight: bold;
 }
 
 .grey-divider {
-    display: none;
+  display: none;
 }
 
 /* Main Content as a Card */
 .main-container {
-    background: #5d5d5d;
-    border-top: 8px solid #bebebe;
-    padding: 50px 20px;
-    padding-bottom: 127px;
-    display: flex;
-    justify-content: center;
+  background: #5d5d5d;
+  border-top: 8px solid #bebebe;
+  padding: 50px 20px;
+  padding-bottom: 127px;
+  display: flex;
+  justify-content: center;
 }
 
 .sub-container {
-    background: white;
-    width: 30%;
-    padding: 20px;
-    padding-top: 60px;
-    border-bottom: 10px solid #e0e0e0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    position: relative;
-    margin-left: -250px;
+  background: white;
+  width: 30%;
+  padding: 20px;
+  padding-top: 60px;
+  border-bottom: 10px solid #e0e0e0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: relative;
+  margin-left: -250px;
 }
 
 .container-label {
-    background: #ffc107;
-    border-bottom: 5px solid #b68a07;
-    padding: 10px;
-    margin-bottom: 10px;
-    position: absolute;
-    top: 5px;
-    left: -20px;
-    font-weight: bold;
-    font-size: 20px;
+  background: #ffc107;
+  border-bottom: 5px solid #b68a07;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .container-p2 {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 390px) {
-    .header {
-        padding-top: 40px;
-        padding-left: 10%;
-        width: 80%;
-        text-align: left;
-    }
+  .header {
+    padding-top: 40px;
+    padding-left: 10%;
+    width: 80%;
+    text-align: left;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
 
-    /* Write class with spacing in html and call both in css for specificity when calling a shared class*/
-    .divider.one {
-        display: block;
-        width: 100%;
-        height: 50px;
-        border-top: 5px #bebebe solid;
-        background-color: #999999;
-    }
+  /* Write class with spacing in html and call both in css for specificity when calling a shared class*/
+  .divider.one {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-top: 5px #bebebe solid;
+    background-color: #999999;
+  }
 
-    .divider.two {
-        display: none;
-    }
+  .divider.two {
+    display: none;
+  }
 
-    .main-container {
-        /* !important to force apply */
-        width: 100% !important;
-        padding: 0;
-        justify-content: left;
-        background-color: white;
-        border: 0;
-    }
+  .main-container {
+    /* !important to force apply */
+    width: 100% !important;
+    padding: 0;
+    justify-content: left;
+    background-color: white;
+    border: 0;
+  }
 
-    .sub-container {
-        margin: 0;
-        padding-top: 60px !important;
-        border: 0;
-        box-shadow: none;
-    }
+  .sub-container {
+    margin: 0;
+    padding-top: 60px !important;
+    border: 0;
+    box-shadow: none;
+  }
 
-    .container-label {
-        font-size: 16px !important;
-        margin: 0 !important;
-        height: 50px;
-        width: 80%;
-        left: -5px !important;
-        padding: 8px;
-        left: 5px;
-        display: flex;
-        align-items: center;
-    }
+  .container-label {
+    font-size: 16px !important;
+    margin: 0 !important;
+    height: 50px;
+    width: 80%;
+    left: -5px !important;
+    padding: 8px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+  }
 
-    .container-content p {
-        font-size: 16px !important;
-    }
+  .container-content p {
+    font-size: 16px !important;
+  }
 }
 
 @media (max-width: 720px) {
-    .header, .content {
-        padding: 30px 15px;
-    }
+  .header,
+  .content {
+    padding: 30px 15px;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 24px;
+  }
 
-    .divider {
-        display: block;
-        width: 100%;
-        height: 50px;
-        border-top: 5px #bebebe solid;
-        background-color: #999999;
-    }
+  .divider {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-top: 5px #bebebe solid;
+    background-color: #999999;
+  }
 
-    .main-container {
-        /* !important to force apply */
-        width: 100% !important;
-        padding: 0;
-        justify-content: left;
-        background-color: white;
-        border: 0;
-    }
+  .main-container {
+    /* !important to force apply */
+    width: 100% !important;
+    padding: 0;
+    justify-content: left;
+    background-color: white;
+    border: 0;
+  }
 
-    .sub-container {
-        margin: 0;
-        padding-top: 60px !important;
-        width: 100vw;
-        border: 0;
-        box-shadow: none;
-    }
+  .sub-container {
+    margin: 0;
+    padding-top: 60px !important;
+    width: 100vw;
+    border: 0;
+    box-shadow: none;
+  }
 
-    .container-label {
-        font-size: 16px !important;
-        margin: 0 !important;
-        height: 50px;
-        width: 400px;
-        left: -5px !important;
-        padding: 8px;
-        left: 5px;
-        display: flex;
-        align-items: center;
-    }
+  .container-label {
+    font-size: 16px !important;
+    margin: 0 !important;
+    height: 50px;
+    width: 400px;
+    left: -5px !important;
+    padding: 8px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+  }
 
-    .container-content p {
-        font-size: 16px !important;
-    }
+  .container-content p {
+    font-size: 16px !important;
+  }
 }
-
