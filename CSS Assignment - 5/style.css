@@ -227,6 +227,12 @@ ul li img {
 blockquote {
     font-style: italic;
 }
+
+cite img {
+    position: relative;
+    top: 10px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
