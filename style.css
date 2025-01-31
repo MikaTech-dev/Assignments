@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.1);    
+    min-width: fit-content;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.video-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Changes the position on the z axis of an item on the webpage i.e which element/item comes before the other, lower means further back, higher means further forwards */
+}
+
+.video-background video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Force covering the entire page */
+    z-index: -1;
+    pointer-events: none; /* Prevent interaction (pointer is the cursor) */
+}
+
+.navigation {
+    z-index: 1;
+    position: relative;
+    bottom: 200px;
+    right: 800px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content {
+    z-index: 1;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+} 
+
+h1 {
+    font-size: 80px;
+    position: relative;
+    bottom: 200px;
+}
+
+.admissionNo{
+    font-size: 60px;
+    position: relative;
+    bottom: 150px;
+}
+
+.here {
+    font-size: 50px;
+    position: relative;
+    bottom: 100px;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 3px;
+    padding: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.badNews {
+    position: relative;
+    top: 240px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1618px) {
+
+    .badNews {
+        top: 250px;
+    }
+    .navigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 938px) {
+
+    .badNews {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+
+    .badNews {
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .badNews {
+        top: 0px;
+    }
+}

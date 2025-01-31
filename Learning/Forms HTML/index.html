@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- the action thing specifies what the form should do (usually go to another page or a fragment identifier or something) -->
+      <form action="">
+        <input type="text" id="name" name="username" placeholder="Enter your username" required minlength="4"/>
+        <input type="password" id="security" name="password" placeholder="Enter your password" required minlength="4"/>
+        <input type="email" name="email" placeholder="Enter your email" />
+        <br>  
+        <input type="checkbox" name="subscribe" value="yes" /> Subscribe to the newsletter
+        <fieldset>
+          <!-- Fieldset spawns some kind of universal outline which does what <section> does-->
+          <legend>Gender</legend>
+          <!-- Caption but it's only for fieldset -->
+          <input type="radio" name="gender" value="male" /> Male
+          <input type="radio" name="gender" value="female" /> Female
+        </fieldset>
+        <!-- or --> 
+        <button type="submit">submit</button>
+
+        <!-- If you want to manipulate that autocomplete black popup thingy, just add in the autocomplete attribute-->
+         <br>
+         <label for="random">Testing autocomplete functionality: </label>
+         <input type="text" name="random" id="random" autocomplete="username">
+
+         <!-- You use Divs as empty containers and assign it a class so any changes made to the class is made to everything within the container that is the div -->
+          <div class="form-checkbox">
+            <!-- Labels display a caption that tells users what kind of info to enter. it targets a specific id or it targets the next element -->
+            <label for="agree">Do you agree to our <a href="https://www.altschoolafrica.com">terms of service</a></label>
+            <input type="checkbox" name="agree" id="agree"> <br>
+            <!-- Accept files, especially of a specific video type with this input attribute -->
+            <label for="">Enter mp4: </label>
+            <input type="file" accept="video/mp4" />
+            <input type="file" name="cam" id="cam" capture="">
+            <!-- Add in an image, give it alt text and make it undraggable so even if you manage to drag it you're pulling it's alt name and not the img -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbknLAESnOINVAGOyL_utzdTgT6UK7ehEqg&s" alt="star" draggable="false">
+          </div>
+          <details name="That's">
+            <summary>That's all I was talking about</summary>
+            That's. '' Que absolute cinema because my writing is just that fire''
+          </details>
+          <details name="That's">
+            <summary>This time i'm talking about this</summary>
+            This "You cannot lie my writing is magnanimously fire"
+          </details>
+          <details name="That's">
+            <summary>So that time was different from this time because this time we talked abeout next time </summary>
+          </details>
+      </form>
+    </main>
+  </body>
+</html>
