@@ -29,8 +29,7 @@ header {
   font-weight: bold;
 }
 
-nav a,
-nav button {
+nav a, nav button {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
@@ -47,6 +46,8 @@ nav button {
 .checkout-container {
   display: flex;
   max-width: 900px;
+  max-width: 100vh;
+  max-height: 100vh;
   margin: 40px auto;
   background-color: #fff;
   border-radius: 8px;
