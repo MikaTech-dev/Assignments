@@ -72,8 +72,8 @@ nav button {
   font-weight: normal !important;
 }
 
-.checkout-form p a:-webkit-any-link {
-  color: #bebebe;
+.checkout-form p a{
+  color: #8a8a8a;
 }
 
 h2 {
@@ -219,7 +219,7 @@ ul li img {
   line-height: 2;
 }
 
-.agency a:-webkit-any-link {
+.agency a{
   color: #fff;
 }
 
