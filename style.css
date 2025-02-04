@@ -94,44 +94,20 @@ button {
   position: relative; /* Ensure buttons are positioned correctly */
 }
 
-.badNews {
-  position: relative;
-  top: 240px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
 @media screen and (max-width: 1618px) {
-  .badNews {
-    top: 250px;
-  }
   .navigation {
     display: none;
   }
 }
 
 @media screen and (max-width: 938px) {
-  .badNews {
-    top: 100px;
-  }
-
   h1 {
     margin-top: 250px;
   }
 }
 
 @media screen and (max-width: 685px) {
-  .badNews {
-    top: 50px;
-  }
-
   h1 {
     font-size: 50px;
-  }
-}
-
-@media screen and (max-width: 578px) {
-  .badNews {
-    top: 0;
   }
 }
