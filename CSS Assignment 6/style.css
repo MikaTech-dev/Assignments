@@ -349,6 +349,7 @@ span {
 .third-page {
   position: relative;
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
 .third-page .text {
@@ -548,6 +549,21 @@ span {
 
 .button2:focus {
   border: 3px #87afff solid;
+}
+
+
+/* Form Page */
+.formPage .bgVector {
+  background-color: #1e3448;
+  height: 523px;
+}
+
+.bgVector1 {
+  position: absolute;
+}
+
+.bgVector2 {
+  position: absolute;
 }
 
 @media (max-width: 768px) {
