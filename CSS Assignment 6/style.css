@@ -87,7 +87,7 @@ button:focus {
   border: solid transparent;
   padding: 10px 16px;
   border-radius: 20px;
-  background-color: #0055ff;
+  background-color: #0056ff;
   color: #fff;
   cursor: pointer;
   border: 3px #00000000 solid;
@@ -371,6 +371,8 @@ span {
   font-size: 35px;
 }
 
+/* Service Price */
+
 .mainpriceBox {
   display: flex;
   justify-content: center;
@@ -387,37 +389,166 @@ span {
   border-radius: 12px;
   justify-self: right;
   align-self: center;
+  align-content: center;
+  text-align: left;
+  padding-left: 50px;
   z-index: 0;
   position: relative;
   right: -10px;
 }
 
+/* Price Indicators */
+/* Price Box 1 */
+.priceBox1 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.priceBox1 h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.priceBox1 .priceDesc {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.priceBox1 ol li {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.priceBox1 ol li::before {
+  content: url(./img/blue\ check\ circle.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+/* Price Box 2 */
 .mainpriceBox .priceBox2{
   color: #fff;
   background-color: #1E3448;
-  height: 627px;
+  height: 600px;
   width: 410px;
-  /* border: 1px #1E3448 solid; */
+  padding-left: 50px;
   border-radius: 12px;
   justify-self: center;
+  align-content: center;
+  text-align: left;
   z-index: 1;
 }
 
+.priceBox2 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.priceBox2 h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.priceBox2 .priceDesc {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.priceBox2 ol li {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.priceBox2 ol li::before {
+  content: url(./img/white\ check\ circle.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+/* Price Box 3 */
 .mainpriceBox .priceBox3{
   color: #1E3448;
   background-color: #fff;
   height: 455px;
   width: 379px;
+  padding-left: 50px;
   border: 2px #0055ff solid;
   border-radius: 12px;
+  text-align: left;
   justify-self: left;
   align-self: center;
+  align-content: center;
   z-index: 0;
   position: relative;
   left: -10px;
 }
 
+.priceBox3 p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
 
+.priceBox3 h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.priceBox3 .priceDesc {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.priceBox3 ol li {
+  list-style: none;
+  padding-top: 25px;
+}
+
+.priceBox3 ol li::before {
+  content: url(./img/blue\ check\ circle.svg);
+  position: relative;
+  left: -5px;
+  top: 1px;
+}
+
+.priceButton {
+  padding-left: 10px;
+}
+
+.priceButton .button1 {
+  color: #0055ff;
+  background-color: #00000000;
+  padding: 10px 15px;
+  border: 1px #0056ff solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #c2c1ff27;
+}
+
+.button1:focus {
+  border: 3px #87afff solid;
+}
+
+.priceButton .button2 {
+  color: #fff;
+  background-color: #0056ff;
+  padding: 10px 15px;
+  border: 1px #00000000 solid;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #1f69ff;
+}
+
+.button2:focus {
+  border: 3px #87afff solid;
+}
 
 @media (max-width: 768px) {
   .navbar {
