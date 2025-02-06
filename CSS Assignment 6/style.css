@@ -556,15 +556,23 @@ span {
 .formPage .bgVector {
   background-color: #1e3448;
   height: 523px;
+  z-index: -1;
 }
 
 .bgVector1 {
   position: absolute;
+  left: 0px;
+  width: 1178.99;
+  z-index: 1;
 }
 
 .bgVector2 {
   position: absolute;
+  right: 0px;
+  z-index: 1;
 }
+
+
 
 @media (max-width: 768px) {
   .navbar {
