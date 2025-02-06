@@ -9,11 +9,15 @@
   min-width: fit-content;
 }
 
-html,
+html {
+  width: 100%;
+}
+
 body {
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   margin: 0;
+  overflow: hidden;
 }
 
 img {
@@ -26,10 +30,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* Change to relative to allow scrolling */
+  position: relative;
   width: 100%;
-  min-height: 100vh; /* Ensure it covers the full viewport height */
-  overflow: hidden;
+  height: 100vh !important;
   z-index: 0; /* Changes the position on the z axis of an item on the webpage i.e which element/item comes before the other, lower means further back, higher means further forwards */
 }
 
@@ -40,6 +43,10 @@ img {
   object-fit: cover; /* Force covering the entire page */
   z-index: -1;
   pointer-events: none; /* Prevent interaction (pointer is the cursor) */
+}
+
+.video-background video::-webkit-media-controls {
+  display: none;
 }
 
 .navigation {
@@ -62,10 +69,18 @@ img {
 }
 
 h1 {
+  color: #fff;
+  -webkit-text-stroke: 1px #fff;
   font-size: 80px;
   position: relative;
   bottom: 150px;
   margin-top: 0 !important; /* Remove top margin */
+  transition: -webkit-text-stroke 0.4s ease, color 0.4s ease;
+}
+
+h1:hover {
+  -webkit-text-stroke: 3px #fff;
+  color: transparent;
 }
 
 .admissionNo {
@@ -86,15 +101,24 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: 2px rgb(255, 255, 255) solid;
   border-radius: 3px;
-  padding: 12px;
+/*   padding: 12px;
+  margin: 10px; */
+  width: 250px;
+  height: 50px;
   margin: 10px;
   cursor: pointer;
-  pointer-events: auto; /* Ensure buttons can be clicked */
   z-index: 10; /* Ensure buttons are above other elements */
   position: relative; /* Ensure buttons are positioned correctly */
+  transition: 0.4s ease;
 }
 
-@media screen and (max-width: 1618px) {
+button:hover {
+  width: 260px;
+  height: 60px;
+  background-color: #ffffff3a;
+}
+
+@media screen and (max-width: 1681px) {
   .navigation {
     display: none;
   }
@@ -108,6 +132,21 @@ button {
 
 @media screen and (max-width: 685px) {
   h1 {
-    font-size: 50px;
+    margin-top: 0;
+    font-size: 40px;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-background {
+    width: auto;
+    height: 100%;
   }
 }
