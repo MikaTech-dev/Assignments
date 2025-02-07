@@ -9,36 +9,25 @@
   min-width: fit-content;
 }
 
-html {
-  width: 100%;
-}
-
+html,
 body {
   height: 100vh;
-  overflow: auto;
-  margin: 0;
-  overflow: hidden;
-}
-
-img {
-  width: 100px;
-  height: 100px;
+  min-width: 563px;
 }
 
 .video-background {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  position: relative;
   width: 100%;
-  height: 100vh !important;
+  height: 100% !important;
   z-index: 0; /* Changes the position on the z axis of an item on the webpage i.e which element/item comes before the other, lower means further back, higher means further forwards */
 }
 
 .video-background video {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   object-fit: cover; /* Force covering the entire page */
   z-index: -1;
@@ -46,53 +35,51 @@ img {
 }
 
 .video-background video::-webkit-media-controls {
-  display: none;
-}
-
-.navigation {
-  z-index: 1;
-  position: relative;
-  bottom: 200px;
-  right: 800px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
+  display: none; /* Completely stops stock browser media controls from showing */
 }
 
 .content {
   z-index: 1;
   color: white;
-  justify-content: center;
   text-align: center;
-  padding: 20px;
+  position: relative;
+  top: 180px;
 }
 
-h1 {
+img {
+  width: 100px;
+  height: 100px;
+  transition: 0.4s;
+}
+
+img:hover {
+  width: 120px;
+  height: 120px;
+  transform: translateY(10px);
+}
+
+.name {
   color: #fff;
-  -webkit-text-stroke: 1px #fff;
-  font-size: 80px;
   position: relative;
-  bottom: 150px;
-  margin-top: 0 !important; /* Remove top margin */
+  -webkit-text-stroke: 1px #fff;
+  font-size: 40px;
+  padding-bottom: 40px;
   transition: -webkit-text-stroke 0.4s ease, color 0.4s ease;
 }
 
-h1:hover {
+.name:hover {
   -webkit-text-stroke: 3px #fff;
   color: transparent;
 }
 
 .admissionNo {
   font-size: 60px;
-  position: relative;
-  bottom: 150px;
+  padding-bottom: 30px;
 }
 
 .here {
   font-size: 50px;
-  position: relative;
-  bottom: 100px;
+  padding-bottom: 30px;
 }
 
 button {
@@ -101,14 +88,12 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: 2px rgb(255, 255, 255) solid;
   border-radius: 3px;
-/*   padding: 12px;
+  /*   padding: 12px;
   margin: 10px; */
   width: 250px;
   height: 50px;
   margin: 10px;
   cursor: pointer;
-  z-index: 10; /* Ensure buttons are above other elements */
-  position: relative; /* Ensure buttons are positioned correctly */
   transition: 0.4s ease;
 }
 
@@ -118,23 +103,11 @@ button:hover {
   background-color: #ffffff3a;
 }
 
-@media screen and (max-width: 1681px) {
-  .navigation {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 938px) {
-  h1 {
-    margin-top: 250px;
-  }
-}
-
-@media screen and (max-width: 685px) {
-  h1 {
-    margin-top: 0;
-    font-size: 40px;
-  }
+button:focus {
+  width: 240px;
+  height: 40px;
+  background-color: transparent;
+  transition: 0.4s ease-in-out;
 }
 
 @media (min-aspect-ratio: 16/9) {
