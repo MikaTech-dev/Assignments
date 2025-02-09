@@ -675,23 +675,23 @@ form .trimURL button:focus {
 .domainAlias {
   display: flex;
   justify-content: space-between;
-  width: 100%; /* Make the container take up the full width */
-  gap: 10px; /* Add some spacing between the two elements */
+  width: 100%;
+  gap: 10px; 
   align-self: center;
 }
 
 .domainAlias select,
 .domainAlias #enterAlias {
   border: 1px solid #0055ff;
-  width: 48%; /* Each element takes up roughly half of the container width */
-  padding: 10px; /* Add padding for better appearance */
+  width: 48%;
+  padding: 10px;
   border-radius: 4px;
   font-size: 14px;
 }
 
 .domainAlias select {
   color: #0055ff;
-  background-color: white; /* Ensure background is white */
+  background-color: white;
   width: 60% !important;
   position: relative;
   left: -10px;
@@ -730,6 +730,95 @@ form .trimURL button:focus {
   top: 0px;
 }
 
+/* FAQ section */
+.FAQ {
+  position: relative;
+  padding: 30px 300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container containing Title and Content */
+.FAQdiv {
+  width: 792px;
+}
+
+h5 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+/* Div containing text and divider */
+.FAQtext {
+  justify-self: center;
+  width: 100px;
+  position: relative;
+}
+
+.FAQtext .divider {
+    width: 5px;
+    height: 40px;
+    background: linear-gradient(#000, #fff);
+    margin: 10px auto;
+    position: absolute;
+    top: -5px;
+}
+
+details {
+  color: #275077;
+  text-align: left;
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+details > summary {
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+details > summary:hover {
+  background-color: #1e34482c;
+  border-radius: 5px;
+}
+
+details > summary:focus {
+  outline-color: #0084ff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+details > summary::after {
+  content: url(./img/plus.svg);
+}
+
+details[open] summary::after{
+  content: url(./img/minus.svg);
+}
+
+details > p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+details > p:focus {
+  font: s;
+}
+
+
+details .FAQsL {
+  position: relative;
+  padding: 30px 300px;
+  display: flex;
+  justify-content: center;
+  border-bottom: #00000000;
+}
 @media (max-width: 768px) {
   .navbar {
       flex-direction: column;
