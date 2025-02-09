@@ -895,6 +895,101 @@ details .FAQsL {
   pointer-events: none;
 }
 
+.mainFooterdiv {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.mainFooterdiv ol li {
+  list-style: none;
+}
+
+.mainFooterdiv a {
+  text-decoration: none;
+  color: #1E3448;
+}
+
+.mainFooterdiv a:visited {
+  text-decoration: none;
+  color: #1E3448;
+}
+
+.mainFooterdiv .h7 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mainFooterdiv > .scissorLinks > a > img {
+  width: 170px;
+}
+
+.scissorLinks {
+  width: 184px;
+  margin-right: 50px;
+}
+
+.scissorSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.infoSec1 {
+  height: 344px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  text-align: left;
+}
+
+.infoSec2 {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  text-align: left;
+}
+
+.infoSec3 {
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 14px;
+  text-align: left;
+}
+.infoSec4 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footerImg1 {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.footerImg2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   .navbar {
       flex-direction: column;
