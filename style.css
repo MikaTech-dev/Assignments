@@ -103,7 +103,7 @@ button:hover {
   background-color: #ffffff3a;
 }
 
-button:focus {
+button:active {
   width: 240px;
   height: 40px;
   background-color: transparent;
