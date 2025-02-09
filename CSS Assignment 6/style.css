@@ -17,10 +17,12 @@ body {
   background: #fdfcfb;
   text-align: center;
   height: 100%;
+  min-width: 1200px;
 }
 
 button:focus {
   border: 3px #87afff solid;
+  outline: none;
 }
 
 /* Navbar */
@@ -350,6 +352,11 @@ span {
   position: relative;
   background-color: #fff;
   padding-bottom: 50px;
+  margin: 0 10px;
+}
+
+.third-page h4 {
+  text-align: left;
 }
 
 .third-page .text {
@@ -364,7 +371,7 @@ span {
   height: 40px;
   width: 5px;
   position: relative;
-  left: -5px;
+  left: -15px;
   top: 42px;
 }
 
@@ -396,6 +403,7 @@ span {
   z-index: 0;
   position: relative;
   right: -10px;
+  overflow: hidden;
 }
 
 /* Price Indicators */
@@ -439,6 +447,7 @@ span {
   align-content: center;
   text-align: left;
   z-index: 1;
+  overflow: hidden;
 }
 
 .priceBox2 p {
@@ -484,6 +493,7 @@ span {
   z-index: 0;
   position: relative;
   left: -10px;
+  overflow: hidden;
 }
 
 .priceBox3 p {
@@ -554,25 +564,171 @@ span {
 
 /* Form Page */
 .formPage .bgVector {
-  background-color: #1e3448;
+  background-attachment: fixed;
+  background-image: url(./img/overlapping-waves-background-deep-sea-design-illustration-vector.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-color: #172736;
+  position: relative;
   height: 523px;
-  z-index: -1;
+  z-index: 1; /* Ensure the background is behind the form */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 500px;
+  height: 350px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.form-container {
+  width: 500px;
+  height: 350px;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the form vertically and horizontally */
+}
+
+form {
+  width: 100%; /* Make the form take up the full width of its container */
+  max-width: 400px; /* Limit the form width for better readability */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add spacing between form elements */
+}
+
+form input[type="text"],
+form select {
+  width: 100%; /* Make inputs and select take up the full width of the form */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form select {
+  appearance: none; /* Remove default dropdown arrow */
+  background-color: white;
+}
+
+form p {
+  text-align: left;
+  font-size: 14px;
+  color: #276fff;
+}
+
+form .trimURL {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the button horizontally */
+}
+
+form .trimURL button {
+  padding: 10px 20px;
+  background-color: #0056ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+form .trimURL button::after {
+  content: url(./img/magic\ wand.svg);
+  position: absolute;
+  pointer-events: none;
+}
+
+form .trimURL button:hover {
+  background-color: #1f69ff;
+}
+
+form .trimURL button:focus {
+  border: 2px #87afff solid;
+}
+
+#urlEntry {
+  color: #276fff;
+  border: 1px #276fff solid;
+}
+
+#urlEntry:focus {
+  outline: none;  
+  border: 3px solid #87afff;
+}
+
+#urlEntry::placeholder {
+  color: #276fff;
+}
+
+.domainAlias {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Make the container take up the full width */
+  gap: 10px; /* Add some spacing between the two elements */
+  align-self: center;
+}
+
+.domainAlias select,
+.domainAlias #enterAlias {
+  border: 1px solid #0055ff;
+  width: 48%; /* Each element takes up roughly half of the container width */
+  padding: 10px; /* Add padding for better appearance */
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.domainAlias select {
+  color: #0055ff;
+  background-color: white; /* Ensure background is white */
+  width: 60% !important;
+  position: relative;
+  left: -10px;
+}
+
+.domainAlias select:focus {
+  outline: none;
+  border: 3px #87afff solid;
+}
+
+#enterAlias {
+  color: #0055ff;
+}
+
+#enterAlias:focus {
+  outline: none;
+  border: 3px #87afff solid;
+}
+
+#enterAlias::placeholder {
+  color: #0055ff;
+}
+
+.bgVector1, .bgVector2 {
+  position: absolute;
+  z-index: 0;
+  background-attachment: fixed;
 }
 
 .bgVector1 {
-  position: absolute;
   left: 0px;
-  width: 1178.99;
-  z-index: 1;
 }
 
 .bgVector2 {
-  position: absolute;
   right: 0px;
-  z-index: 1;
+  top: 0px;
 }
-
-
 
 @media (max-width: 768px) {
   .navbar {

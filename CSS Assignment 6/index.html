@@ -166,8 +166,42 @@
     <!-- Form page -->
     <section class="formPage">
         <div class="bgVector">
+            <div urlForm>
+                <div class="form-container">
+                    <form action="../index.html">
+                      <label for="urlEntry"></label>
+                      <input type="text" id="urlEntry" placeholder="Paste Your URL Here" required>
+                      <div class="domainAlias">
+                            <label for="selectDomain"></label>
+                            <select id="selectDomain" required>
+                                <option value="">Choose Domain</option>
+                                <option value="">USA</option>
+                                <option value="">UK</option>
+                                <option value="">Korea</option>
+                                <option value="">Japan</option>
+                            </select>
+                            <input type="text" id="enterAlias" placeholder="Enter Alias" required>
+                        </div>
+                      <div class="trimURL">
+                        <button type="submit">Trim URL</button>
+                      </div>
+                      <p>By clicking Trim URL, I agree to the <a href="">Terms of Service</a>, <a href="">Privacy Policy</a> and Use of Cookies.</p>
+                    </form>
+                </div>
+            </div>
             <img class="bgVector1" src="./img/Vector Design.svg"></img>
             <img class="bgVector2" src="./img/Vector Design 2.svg"></img>
+        </div>
+    </section>
+    <!-- FAQ -->
+    <section class="FAQ">
+        <div class="FAQdiv">
+            <div class="FAQtext">
+                <h5>FAQs</h5>
+            </div>
+            <details>
+                <summary></summary>
+            </details>
         </div>
     </section>
 </body>
