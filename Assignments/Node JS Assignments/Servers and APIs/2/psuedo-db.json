@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Burger",
+        "price": 8.99,
+        "size": "m"
+    },
+    {
+        "id": 2,
+        "name": "Veggie Pizza",
+        "price": 12.5,
+        "size": "l"
+    },
+    {
+        "id": 3,
+        "name": "Chicken Wrap",
+        "price": 6.75,
+        "size": "s"
+    },
+    {
+        "id": 4,
+        "name": "Caesar Salad",
+        "price": 7.25,
+        "size": "m"
+    },
+    {
+        "id": 5,
+        "name": "Fish Tacos",
+        "price": 9.5,
+        "size": "l"
+    }
+]
