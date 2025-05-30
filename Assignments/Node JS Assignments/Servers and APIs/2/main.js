@@ -39,7 +39,7 @@ function requestHandler(req, res) {
 
 function getMenu(req, res) {
     if (req.url == "/menu" && req.method === "GET") {
-        fs.readFile (filePath, (err, data) => {
+        fs.readFile (filePath, "utf8", (err, data) => {
             if (err) {
                 console.log(err.cause);
             }
@@ -69,12 +69,14 @@ function postMenu(req,res) {
             console.log("An error occurred while reading the requested data: ", err)
             res.end
         }
+        const parsedData = JSON.parse(data)
         try {
-            const parsedData = JSON.parse(data)
             console.log (parsedData)
             res.end (data)
         } catch (error) {
             console.log(`An error occurred while parsing this JSON file for the ${req.method} method: ${error}`);
         }
+    // handling body data
+        
     })
 }
