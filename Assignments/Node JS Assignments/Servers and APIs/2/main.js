@@ -169,7 +169,7 @@ function getOneItem(req, res) {
 
 /**
  * Updates a menu item by id.
- * Expects a PUT request to /menu?id=... with updated item data in the request body.
+ * Expects PUT request to /menu?id= with updated item info in the request body.
  */
 function updateMenuItem(req, res) {
     const parsedUrl = parse(req.url, true);
@@ -181,7 +181,7 @@ function updateMenuItem(req, res) {
             return;
         }
 
-        // Collect the request body data
+        // Collectinf and parsing the request body data
         let body = [];
         req.on("data", chunk => {
             body.push(chunk);
