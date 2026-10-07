@@ -47,14 +47,12 @@ body {
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  height: 150px;
   transition: 0.4s;
 }
 
 img:hover {
-  width: 120px;
-  height: 120px;
+  height: 180px;
   transform: translateY(10px);
 }
 
