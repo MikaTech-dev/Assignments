@@ -106,10 +106,9 @@ button:hover {
 }
 
 button:active {
-  width: 240px;
-  height: 40px;
+  padding: 7px 18px;
   background-color: transparent;
-  transition: 0.4s ease-in-out;
+  transition: 0.15s ease-in;
 }
 
 @media (min-aspect-ratio: 16/9) {
