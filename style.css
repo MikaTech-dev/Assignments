@@ -80,24 +80,28 @@ img:hover {
   padding-bottom: 30px;
 }
 
+.buttons{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 button {
   color: white;
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0);
   border: 2px rgb(255, 255, 255) solid;
-  border-radius: 3px;
+  border-radius: 30px;
   /*   padding: 12px;
   margin: 10px; */
-  width: 250px;
-  height: 50px;
+  padding: 10px 20px;
+  margin: 10px;
   margin: 10px;
   cursor: pointer;
   transition: 0.4s ease;
 }
 
 button:hover {
-  width: 260px;
-  height: 60px;
+  padding: 12px 24px;
   background-color: #ffffff3a;
 }
 
