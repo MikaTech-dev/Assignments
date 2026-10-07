@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compliance Assessment Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-zinc-50 flex items-center justify-center p-4 sm:p-6 text-zinc-950">
+
+    <div class="w-full max-w-2xl">
+        <div class="rounded-xl border border-zinc-200 bg-white shadow-sm p-6 sm:p-8">
+            <div class="space-y-1 pb-6">
+                <h1 class="text-xl font-semibold tracking-tight text-zinc-950">Compliance Assessment Form</h1>
+            </div>
+
+            <form id="complianceForm" class="space-y-6">
+                
+                <div class="space-y-2">
+                    <label for="mandate" class="text-sm font-medium leading-none text-zinc-950">
+                        Target Compliance Requirement Mandate
+                    </label>
+                    <div class="relative">
+                        <select required
+                            id="mandate" 
+                            name="mandate" 
+                            class="flex h-9 w-full appearance-none rounded-md border border-zinc-200 bg-white px-3 py-1 pr-8 text-sm shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-zinc-950 cursor-pointer">
+                            <option value="" disabled selected>Select mandate...</option>
+                            <option value="ISO/IEC 27001">ISO/IEC 27001</option>
+                            <option value="NIST CSF 2.0">NIST CSF 2.0</option>
+                            <option value="GDPR Article 32">GDPR Article 32</option>
+                            <option value="SOC 2 Type II">SOC 2 Type II</option>
+                            <option value="PCI DSS v4.0">PCI DSS v4.0</option>
+                            <option value="HIPAA Security Rule">HIPAA Security Rule</option>
+                        </select>
+                        <svg class="pointer-events-none absolute right-2.5 top-2.5 h-4 w-4 opacity-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label for="branchOffice" class="text-sm font-medium leading-none text-zinc-950">
+                            Branch office
+                        </label>
+                        <div class="relative">
+                            <select required
+                                id="branchOffice" 
+                                name="branchOffice" 
+                                class="flex h-9 w-full appearance-none rounded-md border border-zinc-200 bg-white px-3 py-1 pr-8 text-sm shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-zinc-950 cursor-pointer">
+                                <option value="" disabled selected>Select branch office...</option>
+                                <option value="Headquarters">Headquarters</option>
+                                <option value="London Office">London Office</option>
+                                <option value="New York Office">New York Office</option>
+                                <option value="Singapore Office">Singapore Office</option>
+                                <option value="Frankfurt Office">Frankfurt Office</option>
+                            </select>
+                            <svg class="pointer-events-none absolute right-2.5 top-2.5 h-4 w-4 opacity-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="accountableDept" class="text-sm font-medium leading-none text-zinc-950">
+                            Accountable Department
+                        </label>
+                        <div class="relative">
+                            <select required
+                                id="accountableDept" 
+                                name="accountableDept" 
+                                class="flex h-9 w-full appearance-none rounded-md border border-zinc-200 bg-white px-3 py-1 pr-8 text-sm shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-zinc-950 cursor-pointer">
+                                <option value="" disabled selected>Select department...</option>
+                                <option value="Information Security">Information Security</option>
+                                <option value="Risk & Compliance">Risk & Compliance</option>
+                                <option value="Internal Audit">Internal Audit</option>
+                                <option value="Legal">Legal</option>
+                                <option value="Engineering & IT">Engineering & IT</option>
+                                <option value="Human Resources">Human Resources</option>
+                            </select>
+                            <svg class="pointer-events-none absolute right-2.5 top-2.5 h-4 w-4 opacity-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label for="compliancePosture" class="text-sm font-medium leading-none text-zinc-950">
+                            Compliance posture
+                        </label>
+                        <div class="relative">
+                            <select required
+                                id="compliancePosture" 
+                                name="compliancePosture" 
+                                class="flex h-9 w-full appearance-none rounded-md border border-zinc-200 bg-white px-3 py-1 pr-8 text-sm shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-zinc-950 cursor-pointer">
+                                <option value="" disabled selected>Select posture...</option>
+                                <option value="compliant">Compliant</option>
+                                <option value="warning">Warning</option>
+                                <option value="non-compliant">Non-compliant</option>
+                            </select>
+                            <svg class="pointer-events-none absolute right-2.5 top-2.5 h-4 w-4 opacity-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="assessmentDate" class="text-sm font-medium leading-none text-zinc-950">
+                            Assessment Date
+                        </label>
+                        <input required
+                            type="date" 
+                            id="assessmentDate" 
+                            name="assessmentDate" 
+                            class="flex h-9 w-full rounded-md border border-zinc-200 bg-white px-3 py-1 text-sm shadow-sm transition-colors focus:outline-none focus:ring-1 focus:ring-zinc-950"
+                        />
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <label for="assessmentNotes" class="text-sm font-medium leading-none text-zinc-950 flex justify-between">
+                        <span>Assessment Notes</span>
+                        <span id="charCounter" class="text-xs text-zinc-400 font-normal">0/250</span>
+                    </label>
+                    <textarea required
+                        id="assessmentNotes" 
+                        name="assessmentNotes" 
+                        maxlength="250" 
+                        rows="3" 
+                        placeholder="Enter assessment notes..." 
+                        class="flex min-h-[80px] w-full rounded-md border border-zinc-200 bg-transparent px-3 py-2 text-sm shadow-sm transition-colors placeholder:text-zinc-400 focus:outline-none focus:ring-1 focus:ring-zinc-950 resize-y"
+                    ></textarea>
+                </div>
+
+                <div class="pt-2 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-end gap-2">
+                    <a 
+                        href="./login.html"
+                        id="cancelBtn" 
+                        class="inline-flex items-center justify-center rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-900 shadow-sm transition-colors hover:bg-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-950 h-9 cursor-pointer">
+                        Cancel
+                    </a>
+                    <button 
+                        type="button" 
+                        id="saveBtn" 
+                        class="inline-flex items-center justify-center rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-900 shadow-sm transition-colors hover:bg-zinc-100 focus:outline-none focus:ring-1 focus:ring-zinc-950 h-9 cursor-pointer">
+                        Save
+                    </button>
+                    <button 
+                        type="submit" 
+                        id="postBtn" 
+                        class="inline-flex items-center justify-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-zinc-50 shadow transition-colors hover:bg-zinc-800 focus:outline-none focus:ring-1 focus:ring-zinc-950 h-9 cursor-pointer">
+                        Post
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const notes = document.getElementById('assessmentNotes');
+        const counter = document.getElementById('charCounter');
+        notes.addEventListener('input', () => {
+            counter.textContent = `${notes.value.length}/250`;
+        });
+
+        const form = document.getElementById('complianceForm');
+
+        document.getElementById('cancelBtn').addEventListener('click', () => {
+            form.reset();
+            counter.textContent = '0/250';
+        });
+
+        document.getElementById('saveBtn').addEventListener('click', () => {
+            if (form.reportValidity()) {
+                alert('Assessment progress saved successfully.');
+            }
+        });
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (form.checkValidity()) {
+                window.location.href = './login.html';
+            }
+        });
+    </script>
+</body>
+</html>
